@@ -1,0 +1,9 @@
+name: Robert # Nom du workflow
+on: [push] # Evenement
+jobs: # Etapes a appliquer
+  say-hello: # Nom du job
+    runs-on: ubuntu-latest # L'env
+    steps:
+      - run: echo "Hello, Robert"
+    
+  
