@@ -5,5 +5,10 @@ jobs: # Etapes a appliquer
     runs-on: ubuntu-latest # L'env
     steps:
       - run: echo "Hello, Robert"
+  say-good-bye: 
+    runs-on: ubuntu-latest
+    steps:
+      - run: ls -l
+      - run: echo "Bye Robert"
     
   
