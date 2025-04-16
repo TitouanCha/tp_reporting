@@ -5,10 +5,15 @@ jobs: # Etapes a appliquer
     runs-on: ubuntu-latest # L'env
     steps:
       - run: echo "Hello, Robert"
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: ls
+      - uses: actions/checkout@v4.2.2
+      -
   say-good-bye: 
     runs-on: ubuntu-latest
     steps:
-      - run: ls -l
       - run: echo "Bye Robert"
     
   
