@@ -15,11 +15,5 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        this.mainActivityTitleTextView = findViewById(R.id.main_activity_title_tv)
-        this.mainActivityTitleTextView.text = "Android > IOS"
-
-        this.mainActivityCentralTextView = findViewById(R.id.main_activity_central_tv)
-        this.mainActivityCentralTextView.text = "New Text !!!"
-
     }
 }
