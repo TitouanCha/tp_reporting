@@ -10,7 +10,6 @@ jobs: # Etapes a appliquer
     steps: 
       - run: ls
       - uses: actions/checkout@v4.2.2
-      -
   say-good-bye: 
     runs-on: ubuntu-latest
     steps:
