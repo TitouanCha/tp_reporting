@@ -5,14 +5,31 @@ jobs: # Etapes a appliquer
     runs-on: ubuntu-latest # L'env
     steps:
       - run: echo "Hello, Robert"
-  build:
+  echos:
     runs-on: ubuntu-latest
     steps: 
-      - run: ls
       - uses: actions/checkout@v4.2.2
-  say-good-bye: 
+      - run: ls
+      - run: echo "Ce workflow a été trigger sur un événement de type ${{ github.event_name }}"
+      - run: echo "Cette tache s'execute sur un serveur linux ebergé par gitHub"
+      - run: echo "Le nom de votre branche est  ${{ github.ref_name }}"
+      
+  android-app-build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Bye Robert"
+      - name: Checkout sources
+        uses: actions/checkout@v4
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: 17
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+      - name: Build with Gradle
+        run: ./gradlew build
+          
+    
+      
     
   
