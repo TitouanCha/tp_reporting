@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestAndroid</string>
+    <string name="text_view_title_static_text">Title</string>
+    <string name="main_activity_img_desc">C\'est une image casse pas les couilles</string>
+    <string name="text_city">Paris</string>
+    <string name="texte_date">Vendredi 13, avril</string>
+    <string name="text_weather">Summy</string>
+    <string name="text_temp">31°</string>
+</resources>
