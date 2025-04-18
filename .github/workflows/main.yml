@@ -5,7 +5,7 @@ jobs: # Etapes a appliquer
     runs-on: ubuntu-latest # L'env
     steps:
       - run: echo "Hello, Robert"
-  build:
+  echos:
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v4.2.2
@@ -14,6 +14,12 @@ jobs: # Etapes a appliquer
       - run: echo "Cette tache s'execute sur un serveur linux ebergé par gitHub"
       - run: echo "Le nom de votre branche est  ${{ github.ref_name }}"
       
+  android-app-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build with Gradle
+      - uses: gradle/actions@v4.3.1
+          
     
       
     
