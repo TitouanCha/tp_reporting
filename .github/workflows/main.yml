@@ -1,5 +1,8 @@
 name: Robert # Nom du workflow
-on: [push] # Evenement
+on: 
+  push:
+    branches: 
+      - develop
 jobs: # Etapes a appliquer
   say-hello: # Nom du job
     runs-on: ubuntu-latest # L'env
