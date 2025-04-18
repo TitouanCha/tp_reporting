@@ -8,11 +8,13 @@ jobs: # Etapes a appliquer
   build:
     runs-on: ubuntu-latest
     steps: 
-      - run: ls
       - uses: actions/checkout@v4.2.2
-  say-good-bye: 
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Bye Robert"
+      - run: ls
+      - run: echo "Ce workflow a été trigger sur un événement de type ${{ github.event_name }}"
+      - run: echo "Cette tache s'execute sur un serveur linux ebergé par gitHub"
+      - run: echo "Le nom de votre branche est  ${{ github.ref_name }}"
+      
+    
+      
     
   
