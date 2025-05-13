@@ -6,4 +6,14 @@
     <string name="texte_date">Vendredi 13, avril</string>
     <string name="text_weather">Summy</string>
     <string name="text_temp">31°</string>
+    <string name="text_title_summary">Summary</string>
+    <string name="text_summary">Here we experimented with typography, bright colors and non-standard composition </string>
+    <string name="text_wind_speed">4km/h</string>
+    <string name="text_wind">wind</string>
+    <string name="text_humidity_value">48%</string>
+    <string name="text_humidity">Humidity</string>
+    <string name="text_visibility_value">1.6km</string>
+    <string name="text_visibility">Visibility</string>
+    <string name="text_fortcast_title">Weeckly forecast</string>
+
 </resources>
